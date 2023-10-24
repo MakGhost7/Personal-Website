@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- TODO list 
+
+    Fare pagina curriculum
+    -mettere curriculum-
+    
+    Cambiare immagine
+    Modificare Immagine Bio
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+
+
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,107 +39,81 @@
 </head>
 
 <body>
+    <a href="./portfolio/index.html" id="stile-link">Portfolio</a>
     <header>
         <nav>
             <div class="container">
-               <style>
-                    .container {
-                        display: flex;
-                        align-items: center;
-                    }
-            
-                    .scritta {
-                        font-size: 24px;
-                        margin: 0 2px; /* Aggiunge uno spazio tra le scritte */
-                        transition: transform 0.3s;
-                        color: black;
-                    }
-
-            
-                    .container:hover .scritta:nth-child(1) {
-                        transform: translateX(-15px); /* Allontana la prima scritta a sinistra */
-                    }
-            
-                    .container:hover .scritta:nth-child(2) {
-                        transform: translateX(15px); /* Allontana la seconda scritta a destra */
-                    }
-                
-                </style>
-            <body>
-                <div class="container">
-                    <div class="scritta"><h1>MAKSYM</h1></div>
-                    <div class="scritta"><h1>CHUKH</h1></div>
+                <div class="scritta">
+                    <h1>MAKSYM</h1>
                 </div>
-            </body>
-                <ul>
-                    <li><a href="about">Who am I</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contacts</a></li>
-                </ul>
+                <div class="scritta">
+                    <h1>CHUKH</h1>
+                </div>
             </div>
         </nav>
-     </header>
+    </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            
-            <p>Hello everyone,
 
-                I am a 22-year-old guy with a long-standing passion for computers and technology.
-                I am seeking to embark on a new path in this field as I am tired of my current job
-                and do not see a happy future in it. I particularly enjoy working in teams, listening
-                to my peers' opinions, and exchanging ideas and perspectives with them. This course
-                represents a long-term investment in my personal growth, and I am aware that in 5 years,
-                I may change direction. However, at the moment, I am very enthusiastic and excited,
-                so I will always give my utmost effort..</p>
-            <img id="mia-foto" src="assents/img/1242f5a3-43b1-486f-93fe-9b88b34bbaa5.JPG" alt="I am">
-        </div>
-    </section>
+    <div class="container">
 
-    <section id="portfolio" class="section">
-        
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <link src="https://github.com/MakGhost7" alt="Progetto 1">
-                <h4>
-                    <p>Project Description</p>
-                </h4>
-                <h6>
-                    <p>The first project is actually the website you are currently browsing.
-                        Being a beginner, I don't have much to showcase, but this website has taught me a lot, and most
-                        importantly, it has rekindled my passion for this field.</p>
-                </h6>
-            </div>
+        <p>Hello everyone,
 
-        </div>
-    </section>
+            I am a 22-year-old guy with a long-standing passion for computers and technology.
+            I am seeking to embark on a new path in this field as I am tired of my current job
+            and do not see a happy future in it. I particularly enjoy working in teams, listening
+            to my peers' opinions, and exchanging ideas and perspectives with them. This course
+            represents a long-term investment in my personal growth, and I am aware that in 5 years,
+            I may change direction. However, at the moment, I am very enthusiastic and excited,
+            so I will always give my utmost effort..</p>
+        <img id="mia-foto" src="assents/img/1242f5a3-43b1-486f-93fe-9b88b34bbaa5.JPG" alt="I am">
+    </div>
 
-    <section id="skills" class="section">
-       
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
-    </section>
 
-    <section id="contact" class="section">
-            <h2>Contattami</h2>
-            <form method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
+
+    <div class="portfolio-item">
+        <h2>Portfolio</h2>
+        <link src="https://github.com/MakGhost7" alt="Progetto 1">
+        <h4>
+            <p>Project Description</p>
+        </h4>
+        <h6>
+            <p>The first project is actually the website you are currently browsing.
+                Being a beginner, I don't have much to showcase, but this website has taught me a lot, and most
+                importantly, it has rekindled my passion for this field.</p>
+        </h6>
+    </div>
+
+
+
+
+
+    <div>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </div>
+
+
+    <div id="contact" class="section">
+        <h2>Contattami</h2>
+        <form method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Messaggio:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
 
     <footer>
         <div class="container">

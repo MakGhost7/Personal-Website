@@ -155,10 +155,40 @@ a:hover {
 
     width: 200px;
     height: auto;
+}
 
+/* Animazione scritta titolo */
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.scritta {
+    font-size: 24px;
+    margin: 0 2px;
+    /* Aggiunge uno spazio tra le scritte */
+    transition: transform 0.3s;
+    color: black;
+}
+
+
+.container:hover .scritta:nth-child(1) {
+    transform: translateX(-15px);
+    /* Allontana la prima scritta a sinistra */
+}
+
+.container:hover .scritta:nth-child(2) {
+    transform: translateX(15px);
+    /* Allontana la seconda scritta a destra */
+}
+    
+/* Stile   */
+
+#stile-link {
+    display: flex;
+    color: black;
+    
 
 
 }
-
-/* Questo e un commento */
-    
