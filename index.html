@@ -3,120 +3,71 @@
 
 <!-- TODO list 
 
+    Mettere css in ordine
     Fare pagina curriculum
     -mettere curriculum-
     
     Cambiare immagine
     Modificare Immagine Bio
-   
+
+
+    modificare scritta portfolio
     
 
-
-
-
-
-
-
-
-
-
-
-    -->
-
-
-
-
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Il Mio Sito Personale">
-    <meta property="og:description" content="Descrizione breve di chi sono e cosa faccio">
-    <meta property="og:image" content="immagine.jpg">
-    <meta property="og:url" content="https://www.tuosito.com">
     <title>Maksym Chukh</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <a href="./portfolio/index.html" id="stile-link">Portfolio</a>
     <header>
         <nav>
-            <div class="container">
-                <div class="scritta">
-                    <h1>MAKSYM</h1>
-                </div>
-                <div class="scritta">
-                    <h1>CHUKH</h1>
-                </div>
+            <div id="navbar-div">
+                <span id="navbar-left">
+                    <a id="logo-name" href="index.html">
+                        <span>
+                            Maksym
+                        </span>
+                        <span>
+                            Chuck
+                        </span>
+                    </a>
+                </span>
+                <span id="navbar-right">
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </span>
             </div>
         </nav>
     </header>
 
-
-    <div class="container">
-
-        <p>Hello everyone,
-
+    <div id="my-biografy">
+        <p>
+            Hello everyone,
             I am a 22-year-old guy with a long-standing passion for computers and technology.
             I am seeking to embark on a new path in this field as I am tired of my current job
             and do not see a happy future in it. I particularly enjoy working in teams, listening
             to my peers' opinions, and exchanging ideas and perspectives with them. This course
             represents a long-term investment in my personal growth, and I am aware that in 5 years,
             I may change direction. However, at the moment, I am very enthusiastic and excited,
-            so I will always give my utmost effort..</p>
-        <img id="mia-foto" src="assents/img/1242f5a3-43b1-486f-93fe-9b88b34bbaa5.JPG" alt="I am">
+            so I will always give my utmost effort..
+        </p>
+
+        <img id="my-photo" src="assets/img/1242f5a3-43b1-486f-93fe-9b88b34bbaa5.JPG" alt="Picture of me">
     </div>
 
 
-
-
-
-    <div class="portfolio-item">
-        <h2>Portfolio</h2>
-        <link src="https://github.com/MakGhost7" alt="Progetto 1">
-        <h4>
-            <p>Project Description</p>
-        </h4>
-        <h6>
-            <p>The first project is actually the website you are currently browsing.
-                Being a beginner, I don't have much to showcase, but this website has taught me a lot, and most
-                importantly, it has rekindled my passion for this field.</p>
-        </h6>
-    </div>
-
-
-
-
-
-    <div>
+    <div id="my-skills">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    </div>
-
-
-    <div id="contact" class="section">
-        <h2>Contattami</h2>
-        <form method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Messaggio:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-
+        <h5>aggiungere le foto di css e html</h5>
     </div>
 
     <footer>
-        <div class="container">
+        <div>
             <p>&copy; 2023 Maksym Chukh</p>
         </div>
     </footer>

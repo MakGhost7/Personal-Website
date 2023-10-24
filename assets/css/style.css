@@ -1,0 +1,125 @@
+body {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Per Firefox */
+    -ms-overflow-style: none;
+    /* Per Internet Explorer/Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* Nasconde la barra di scorrimento per Chrome e Safari */
+}
+
+/*NAVBAR*/
+
+#navbar-div {
+    margin-top: 2%;
+}
+
+/* LOGO */
+#logo-name {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    text-decoration: none;
+    color: #007bff;
+    transition: all 0.5s;
+    margin-left: 5%;
+    /* Aggiunge una transizione lenta su tutte le proprietà */
+}
+
+#logo-name span:first-child {
+    display: inline-block;
+    transform: translateX(0);
+    /* Inizialmente, entrambi i span sono sovrapposti */
+    transition: transform 0.5s;
+    /* Aggiunge una transizione lenta solo alla trasformazione X */
+}
+
+#logo-name:hover span:first-child {
+    transform: translateX(-50%);
+    /* Sposta il primo span a sinistra per separarlo dal secondo span */
+}
+
+#logo-name span:last-child {
+    display: inline-block;
+    transform: translateX(0);
+    /* Inizialmente, entrambi i span sono sovrapposti */
+    transition: transform 0.5s;
+    /* Aggiunge una transizione lenta solo alla trasformazione X */
+}
+
+#logo-name:hover span:last-child {
+    transform: translateX(50%);
+    /* Sposta il secondo span a destra per separarlo dal primo span */
+}
+
+/* STILE FONT NAVBAR */
+
+a {
+    font-family: "Nome del tuo font", sans-serif;
+    color: #007bff;
+    /* Cambia il colore azzurro in uno a tua scelta */
+    text-decoration: none;
+    /* Rimuovi il sottolineato */
+}
+
+/* PORTFOLIO */
+#navbar-right {
+    float: right;
+    margin-right: 5%;
+}
+
+#navbar-right a {
+    margin-right: 50px;
+    /* Aggiungi spazio di 20 pixel tra i link */
+}
+
+
+/* BIOGRAFY */
+#my-biografy {
+    background-color: #f7f7f7;
+    /* Sfondo grigio chiaro */
+    padding: 20px;
+    /* Spazio intorno al contenuto */
+    border-radius: 10px;
+    /* Bordo arrotondato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ombra leggera */
+    max-width: 50%;
+    /* Allinea al centro della pagina */
+    text-align: center;
+    /* Giustifica il testo */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+#my-biografy p {
+    font-size: 16px;
+    /* Dimensione del testo */
+    line-height: 1.6;
+    /* Spaziatura tra le righe */
+    margin-bottom: 20px;
+    /* Spazio tra i paragrafi */
+}
+
+#my-biografy img {
+    max-width: 100%;
+    /* Assicura che l'immagine non superi la larghezza del div */
+    border-radius: 10px;
+    /* Bordo arrotondato per l'immagine */
+    margin-top: 20px;
+    /* Spazio sopra l'immagine */
+}
+
+#my-photo {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2%;
+}
+
+#my-skills {
+    text-align: center;
+}
