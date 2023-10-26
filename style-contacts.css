@@ -1,29 +1,18 @@
 body {
     font: italic 1.2rem "Montserrat", serif;
+    
   }
 /* BACKGROUND STYLE */
 
 #background {
-    background-image: url(../img/background-contact-page.jpg);
+    background-image: url(./assets/img/background-contact-page.jpg);
     background-size: 100%; /* Regola la dimensione dell'immagine di sfondo in modo che copra l'intero elemento */
     background-position: center center; /* Imposta la posizione dell'immagine al centro dell'elemento */
     background-attachment: fixed; /* Imposta l'immagine di sfondo come fissa (se desiderato) */ 
 }
 
-body {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    /* Per Firefox */
-    -ms-overflow-style: none;
-    /* Per Internet Explorer/Edge */
-}
 
-body::-webkit-scrollbar {
-    display: none;
-    /* Nasconde la barra di scorrimento per Chrome e Safari */
-}
-
-/*NAVBAR*/
+  /*NAVBAR*/
 
 #navbar-div {
     margin-top: 2%;
@@ -31,6 +20,7 @@ body::-webkit-scrollbar {
 }
 
 /* LOGO */
+
 #logo-name {
     display: inline-block;
     position: relative;
@@ -69,6 +59,7 @@ body::-webkit-scrollbar {
     /* Sposta il secondo span a destra per separarlo dal primo span */
 }
 
+
 /* STILE FONT NAVBAR */
 
 a {
@@ -81,91 +72,81 @@ a {
 }
 
 /* PORTFOLIO */
+
 #navbar-right {
     float: right;
     margin-right: 5%;
 }
-
 #navbar-right a {
     margin-right: 50px;
     /* Aggiungi spazio di 20 pixel tra i link */
 }
 
 
-/* BIOGRAFY */
-#my-biografy {
-    background-color: #f5f5f5a2;
-    /* Sfondo grigio chiaro */
-    padding: 20px;
-    /* Spazio intorno al contenuto */
-    border-radius: 40px;
-    /* Bordo arrotondato */
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
-    /* Ombra leggera */
-    max-width: 30%;
-    /* Allinea al centro della pagina */
+/* CONTANCT PAGE STYLE  */
+
+#contancts {
+    float: left;
     text-align: center;
-    /* Giustifica il testo */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
+    width: 30%;
+    padding-left: 20%;
+    margin-top: 3%;
+   
+}
+
+#contancts h2 {
+    font-size: 200%;
+    color: #fff;
     text-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
 }
 
-#my-biografy p {
-    font-size: 16px;
-    /* Dimensione del testo */
-    line-height: 1.6;
-    /* Spaziatura tra le righe */
-    margin-bottom: 20px;
-    /* Spazio tra i paragrafi */
-}
-
-#my-biografy img {
-    max-width: 100%;
-    /* Assicura che l'immagine non superi la larghezza del div */
-    border-radius: 10px;
-    /* Bordo arrotondato per l'immagine */
-    margin-top: 20px;
-    /* Spazio sopra l'immagine */
-}
-
-#my-photo {
-    width: 40%;
-    height: auto;
-    margin-bottom: 2%;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
-    border-radius: 40px;
-}
-
-/* STILE SCRITTA "SKILSS" */
-
-#my-skills {
+form {
+    padding: 10%;
     background-color: #f5f5f5a2;
-    /* Sfondo grigio chiaro */
-    padding: 20px;
-    /* Spazio intorno al contenuto */
     border-radius: 40px;
-    /* Bordo arrotondato */
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
-    /* Ombra leggera */
-    max-width: 300px;
-    /* Imposta il riquadro come inline-block */
-    text-align: center;
-    /* Giustifica il testo */
-    margin-left: 41%;
-    margin-right: 40%;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
 
+label {
+    display: block;
+    margin-bottom: 1%;
+    font-weight: bold;
+    margin-top: 2%;
+}
 
-/* HTML LOGO CSS LOGO */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-#my-skills img {
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
 
-    width: 30%;
-    height: auto;
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* MY CONTACT STYLE */
+
+#my-contacts {
+    float: left;
+    text-align: center;
+    width: 26%;
+    margin-top: 15%;
+    color: #fff;
+    text-shadow: 0px 12px 24px rgba(0, 0, 0, 0.4);
 }
 
 footer {
@@ -173,14 +154,16 @@ footer {
     color: #fff;
     padding: 1%;
     text-align: center;
+    margin-top: 35%;
     margin-bottom: 0;
     position: absolute;
-    bottom: 3;
+    bottom: 0;
     width: 98%;
     left: 0%;
    
     margin-right: -3%;
 }
+
 
 .social-icons a {
     margin: 0 5%;
@@ -197,3 +180,5 @@ footer {
 
 
 }
+
+
